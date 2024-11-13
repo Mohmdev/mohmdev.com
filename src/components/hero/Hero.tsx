@@ -1,3 +1,5 @@
+"use client"
+
 import { OutlineButton } from "../buttons/OutlineButton"
 import Reveal from "../util/Reveal"
 import DotGrid from "./DotGrid"
