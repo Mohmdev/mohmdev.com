@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useRef, useState, type JSX } from "react";
 import { motion, useAnimation, useInView } from "framer-motion"
 import Link from "next/link"
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai"

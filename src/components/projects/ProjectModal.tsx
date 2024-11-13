@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect } from "react"
+import { useEffect, type JSX } from "react";
 import { motion } from "framer-motion"
 import Link from "next/link"
 import ReactDOM from "react-dom"
