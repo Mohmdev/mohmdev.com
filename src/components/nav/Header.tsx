@@ -3,11 +3,17 @@
 import React from "react"
 import Link from "next/link"
 import { SiCodepen, SiGithub, SiLinkedin, SiX } from "react-icons/si"
+import { cn } from "@/lib/utils/cn"
 import { OutlineButton } from "../buttons/OutlineButton"
 
-export const Header = () => {
+export const Header = ({ className }: { className?: string }) => {
   return (
-    <header className="h-[72px] px-4 flex items-center justify-between sticky top-0 z-20 bg-zinc-900/50 backdrop-blur-md">
+    <header
+      className={cn(
+        "h-[72px] px-4 flex items-center justify-between sticky top-0 z-20 bg-zinc-900/50 backdrop-blur-md",
+        className
+      )}
+    >
       <MyLinks />
       <OutlineButton onClick={() => window.open("/fake_resume.pdf")}>
         My Resume
