@@ -1,6 +1,6 @@
-import { AiFillMail } from "react-icons/ai";
-import Link from "next/link";
-import Reveal from "../util/Reveal";
+import Link from "next/link"
+import { AiFillMail } from "react-icons/ai"
+import Reveal from "../util/Reveal"
 
 export const Contact = () => {
   return (
@@ -42,5 +42,5 @@ export const Contact = () => {
         </Reveal>
       </div>
     </section>
-  );
-};
+  )
+}

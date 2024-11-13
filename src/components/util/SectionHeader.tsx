@@ -1,8 +1,8 @@
-import { Reveal } from "./Reveal";
+import { Reveal } from "./Reveal"
 
 interface Props {
-  title: string;
-  dir?: "l" | "r";
+  title: string
+  dir?: "l" | "r"
 }
 
 export const SectionHeader = ({ title, dir = "r" }: Props) => {
@@ -21,5 +21,5 @@ export const SectionHeader = ({ title, dir = "r" }: Props) => {
         </Reveal>
       </h2>
     </div>
-  );
-};
+  )
+}

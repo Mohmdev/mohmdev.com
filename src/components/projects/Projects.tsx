@@ -1,6 +1,6 @@
-import React from "react";
-import { SectionHeader } from "../util/SectionHeader";
-import { Project } from "./Project";
+import React from "react"
+import { SectionHeader } from "../util/SectionHeader"
+import { Project } from "./Project"
 
 export const Projects = () => {
   return (
@@ -9,12 +9,12 @@ export const Projects = () => {
 
       <div className="grid gap-12 grid-cols-1 md:grid-cols-2">
         {projects.map((project) => {
-          return <Project key={project.title} {...project} />;
+          return <Project key={project.title} {...project} />
         })}
       </div>
     </section>
-  );
-};
+  )
+}
 
 const projects = [
   {
@@ -149,4 +149,4 @@ const projects = [
       </>
     ),
   },
-];
+]

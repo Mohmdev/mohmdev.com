@@ -1,18 +1,20 @@
-import { useAnimation, useInView, motion } from "framer-motion";
-import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
-import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
-import { ProjectModal } from "./ProjectModal";
-import Reveal from "../util/Reveal";
+"use client"
+
+import { useEffect, useRef, useState } from "react"
+import { motion, useAnimation, useInView } from "framer-motion"
+import Link from "next/link"
+import { AiFillGithub, AiOutlineExport } from "react-icons/ai"
+import Reveal from "../util/Reveal"
+import { ProjectModal } from "./ProjectModal"
 
 interface Props {
-  modalContent: JSX.Element;
-  description: string;
-  projectLink: string;
-  imgSrc: string;
-  tech: string[];
-  title: string;
-  code: string;
+  modalContent: JSX.Element
+  description: string
+  projectLink: string
+  imgSrc: string
+  tech: string[]
+  title: string
+  code: string
 }
 
 export const Project = ({
@@ -24,22 +26,22 @@ export const Project = ({
   code,
   tech,
 }: Props) => {
-  const [hovered, setHovered] = useState(false);
+  const [hovered, setHovered] = useState(false)
 
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
-  const controls = useAnimation();
+  const controls = useAnimation()
 
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true })
 
   useEffect(() => {
     if (isInView) {
-      controls.start("visible");
+      controls.start("visible")
     } else {
-      controls.start("hidden");
+      controls.start("hidden")
     }
-  }, [isInView, controls]);
+  }, [isInView, controls])
 
   return (
     <>
@@ -115,5 +117,5 @@ export const Project = ({
         tech={tech}
       />
     </>
-  );
-};
+  )
+}

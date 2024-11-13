@@ -1,6 +1,8 @@
-import Reveal from "../util/Reveal";
-import DotGrid from "./DotGrid";
-import { OutlineButton } from "../buttons/OutlineButton";
+"use client"
+
+import { OutlineButton } from "../buttons/OutlineButton"
+import Reveal from "../util/Reveal"
+import DotGrid from "./DotGrid"
 
 const Hero = () => {
   return (
@@ -30,7 +32,7 @@ const Hero = () => {
           <Reveal>
             <OutlineButton
               onClick={() => {
-                document.getElementById("contact")?.scrollIntoView();
+                document.getElementById("contact")?.scrollIntoView()
               }}
               className="pointer-events-auto before:bg-indigo-700 hover:text-white hover:border-indigo-700 mt-4 bg-indigo-500 text-zinc-100 border-indigo-500 md:mt-6"
             >
@@ -41,7 +43,7 @@ const Hero = () => {
         <DotGrid />
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

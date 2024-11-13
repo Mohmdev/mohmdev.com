@@ -1,5 +1,5 @@
-import { SectionHeader } from "../util/SectionHeader";
-import { ExperienceItem } from "./ExperienceItem";
+import { SectionHeader } from "../util/SectionHeader"
+import { ExperienceItem } from "./ExperienceItem"
 
 export const Experience = () => {
   return (
@@ -9,8 +9,8 @@ export const Experience = () => {
         <ExperienceItem key={item.title} {...item} />
       ))}
     </section>
-  );
-};
+  )
+}
 
 const experience = [
   {
@@ -58,4 +58,4 @@ const experience = [
       "Apache Airflow",
     ],
   },
-];
+]
