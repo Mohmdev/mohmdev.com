@@ -1,13 +1,14 @@
-import '@/styles/globals.css';
-import { Inter } from 'next/font/google';
-import { ReactNode } from 'react';
+import "@/styles/globals.css"
+import { ReactNode } from "react"
+import { Inter } from "next/font/google"
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: 'Your App Title',
-  description: 'Your App Description',
-};
+  title: "Mohmdev",
+  description:
+    "Specialized in custom software development, full-stack solutions, and enterprise applications. Delivering scalable and innovative technology solutions.",
+}
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
@@ -16,5 +17,5 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         {children}
       </body>
     </html>
-  );
+  )
 }
