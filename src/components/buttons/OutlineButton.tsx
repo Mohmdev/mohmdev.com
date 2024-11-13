@@ -1,10 +1,10 @@
-import React, { ReactNode } from "react";
-import { twMerge } from "tailwind-merge";
+import React, { ReactNode } from "react"
+import { twMerge } from "tailwind-merge"
 
 type Props = {
-  children: ReactNode;
-  className?: string;
-} & React.ButtonHTMLAttributes<HTMLButtonElement>;
+  children: ReactNode
+  className?: string
+} & React.ButtonHTMLAttributes<HTMLButtonElement>
 
 export const OutlineButton = ({ children, className, ...rest }: Props) => {
   return (
@@ -31,5 +31,5 @@ export const OutlineButton = ({ children, className, ...rest }: Props) => {
     >
       {children}
     </button>
-  );
-};
+  )
+}

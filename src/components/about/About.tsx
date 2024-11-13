@@ -1,8 +1,8 @@
-import { AiOutlineArrowRight } from "react-icons/ai";
-import { SectionHeader } from "../util/SectionHeader";
-import Reveal from "../util/Reveal";
-import { MyLinks } from "../nav/Header";
-import { Stats } from "./Stats";
+import { AiOutlineArrowRight } from "react-icons/ai"
+import { MyLinks } from "../nav/Header"
+import Reveal from "../util/Reveal"
+import { SectionHeader } from "../util/SectionHeader"
+import { Stats } from "./Stats"
 
 export const About = () => {
   return (
@@ -56,5 +56,5 @@ export const About = () => {
         <Stats />
       </div>
     </section>
-  );
-};
+  )
+}

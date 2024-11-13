@@ -1,7 +1,7 @@
-import anime from "animejs";
+import anime from "animejs"
 
-const GRID_WIDTH = 25;
-const GRID_HEIGHT = 20;
+const GRID_WIDTH = 25
+const GRID_HEIGHT = 20
 
 const DotGrid = () => {
   const handleDotClick = (e: any) => {
@@ -23,11 +23,11 @@ const DotGrid = () => {
         grid: [GRID_WIDTH, GRID_HEIGHT],
         from: e.target.dataset.index,
       }),
-    });
-  };
+    })
+  }
 
-  const dots = [];
-  let index = 0;
+  const dots = []
+  let index = 0
 
   for (let i = 0; i < GRID_WIDTH; i++) {
     for (let j = 0; j < GRID_HEIGHT; j++) {
@@ -42,8 +42,8 @@ const DotGrid = () => {
             data-index={index}
           />
         </div>
-      );
-      index++;
+      )
+      index++
     }
   }
 
@@ -55,7 +55,7 @@ const DotGrid = () => {
     >
       {dots}
     </div>
-  );
-};
+  )
+}
 
-export default DotGrid;
+export default DotGrid

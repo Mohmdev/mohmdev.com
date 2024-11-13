@@ -1,11 +1,11 @@
-import React from "react";
-import { SideBar } from "./nav/SideBar";
-import { Header } from "./nav/Header";
-import Hero from "./hero/Hero";
-import { About } from "./about/About";
-import { Projects } from "./projects/Projects";
-import { Experience } from "./experience/Experience";
-import { Contact } from "./contact/Contact";
+import React from "react"
+import { About } from "./about/About"
+import { Contact } from "./contact/Contact"
+import { Experience } from "./experience/Experience"
+import Hero from "./hero/Hero"
+import { Header } from "./nav/Header"
+import { SideBar } from "./nav/SideBar"
+import { Projects } from "./projects/Projects"
 
 export const HomPage = () => {
   return (
@@ -22,5 +22,5 @@ export const HomPage = () => {
         </div>
       </main>
     </div>
-  );
-};
+  )
+}

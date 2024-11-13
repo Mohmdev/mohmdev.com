@@ -1,24 +1,24 @@
-import { useEffect, useRef } from "react";
-import { useAnimation, useInView, motion } from "framer-motion";
+import { useEffect, useRef } from "react"
+import { motion, useAnimation, useInView } from "framer-motion"
 
 interface RevealProps {
-  children: JSX.Element;
-  width?: string;
+  children: JSX.Element
+  width?: string
 }
 
 export const Reveal = ({ children, width = "w-fit" }: RevealProps) => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true })
 
-  const mainControls = useAnimation();
-  const slideControls = useAnimation();
+  const mainControls = useAnimation()
+  const slideControls = useAnimation()
 
   useEffect(() => {
     if (isInView) {
-      mainControls.start("visible");
-      slideControls.start("visible");
+      mainControls.start("visible")
+      slideControls.start("visible")
     }
-  }, [isInView]);
+  }, [isInView])
 
   return (
     <div ref={ref} className={`relative overflow-hidden ${width}`}>
@@ -44,7 +44,7 @@ export const Reveal = ({ children, width = "w-fit" }: RevealProps) => {
         className="absolute bottom-1 left-0 right-0 top-1 z-20 bg-indigo-500"
       />
     </div>
-  );
-};
+  )
+}
 
-export default Reveal;
+export default Reveal

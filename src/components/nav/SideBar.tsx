@@ -1,29 +1,29 @@
-import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
-import { SideBarLink } from "./SideBarLink";
+import { useEffect, useState } from "react"
+import { motion } from "framer-motion"
+import { SideBarLink } from "./SideBarLink"
 
 export const SideBar = () => {
-  const [selected, setSelected] = useState("");
+  const [selected, setSelected] = useState("")
 
   useEffect(() => {
-    const sections = document.querySelectorAll(".section-wrapper");
+    const sections = document.querySelectorAll(".section-wrapper")
 
     const options = {
       threshold: 0.3,
-    };
+    }
 
     const callback = (entries: any) => {
       entries.forEach((entry: any) => {
         if (entry.isIntersecting) {
-          setSelected(entry.target.id);
+          setSelected(entry.target.id)
         }
-      });
-    };
+      })
+    }
 
-    const observer = new IntersectionObserver(callback, options);
+    const observer = new IntersectionObserver(callback, options)
 
-    sections.forEach((section) => observer.observe(section));
-  }, []);
+    sections.forEach((section) => observer.observe(section))
+  }, [])
 
   return (
     <motion.nav
@@ -68,5 +68,5 @@ export const SideBar = () => {
         Contact
       </SideBarLink>
     </motion.nav>
-  );
-};
+  )
+}

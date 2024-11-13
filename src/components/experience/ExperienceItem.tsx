@@ -1,13 +1,13 @@
-import { Chip } from "../util/Chip";
-import Reveal from "../util/Reveal";
+import { Chip } from "../util/Chip"
+import Reveal from "../util/Reveal"
 
 interface Props {
-  title: string;
-  position: string;
-  time: string;
-  location: string;
-  description: string;
-  tech: string[];
+  title: string
+  position: string
+  time: string
+  location: string
+  description: string
+  tech: string[]
 }
 
 export const ExperienceItem = ({
@@ -48,5 +48,5 @@ export const ExperienceItem = ({
         </div>
       </Reveal>
     </div>
-  );
-};
+  )
+}

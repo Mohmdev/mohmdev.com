@@ -1,19 +1,19 @@
-import { useEffect } from "react";
-import ReactDOM from "react-dom";
-import { motion } from "framer-motion";
-import Link from "next/link";
-import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
-import { MdClose } from "react-icons/md";
+import { useEffect } from "react"
+import { motion } from "framer-motion"
+import Link from "next/link"
+import ReactDOM from "react-dom"
+import { AiFillGithub, AiOutlineExport } from "react-icons/ai"
+import { MdClose } from "react-icons/md"
 
 interface Props {
-  isOpen: boolean;
-  setIsOpen: Function;
-  title: string;
-  imgSrc: string;
-  code: string;
-  projectLink: string;
-  tech: string[];
-  modalContent: JSX.Element;
+  isOpen: boolean
+  setIsOpen: Function
+  title: string
+  imgSrc: string
+  code: string
+  projectLink: string
+  tech: string[]
+  modalContent: JSX.Element
 }
 
 export const ProjectModal = ({
@@ -27,14 +27,14 @@ export const ProjectModal = ({
   tech,
 }: Props) => {
   useEffect(() => {
-    const body = document.querySelector("body");
+    const body = document.querySelector("body")
 
     if (isOpen) {
-      body!.style.overflowY = "hidden";
+      body!.style.overflowY = "hidden"
     } else {
-      body!.style.overflowY = "scroll";
+      body!.style.overflowY = "scroll"
     }
-  }, [isOpen]);
+  }, [isOpen])
 
   const content = (
     <div
@@ -92,10 +92,10 @@ export const ProjectModal = ({
         </div>
       </motion.div>
     </div>
-  );
+  )
 
-  if (!isOpen) return <></>;
+  if (!isOpen) return <></>
 
   // @ts-ignore
-  return ReactDOM.createPortal(content, document.getElementById("root"));
-};
+  return ReactDOM.createPortal(content, document.getElementById("root"))
+}

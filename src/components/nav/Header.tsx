@@ -1,7 +1,7 @@
-import Link from "next/link";
-import React from "react";
-import { SiCodepen, SiGithub, SiLinkedin, SiX } from "react-icons/si";
-import { OutlineButton } from "../buttons/OutlineButton";
+import React from "react"
+import Link from "next/link"
+import { SiCodepen, SiGithub, SiLinkedin, SiX } from "react-icons/si"
+import { OutlineButton } from "../buttons/OutlineButton"
 
 export const Header = () => {
   return (
@@ -11,8 +11,8 @@ export const Header = () => {
         My Resume
       </OutlineButton>
     </header>
-  );
-};
+  )
+}
 
 export const MyLinks = () => (
   <div className="flex items-center text-lg gap-4">
@@ -49,4 +49,4 @@ export const MyLinks = () => (
       <SiCodepen />
     </Link>
   </div>
-);
+)

@@ -1,6 +1,6 @@
-import { Chip } from "../util/Chip";
-import Reveal from "../util/Reveal";
-import { AiFillCode, AiFillSmile } from "react-icons/ai";
+import { AiFillCode, AiFillSmile } from "react-icons/ai"
+import { Chip } from "../util/Chip"
+import Reveal from "../util/Reveal"
 
 export const Stats = () => {
   return (
@@ -50,5 +50,5 @@ export const Stats = () => {
         </div>
       </Reveal>
     </div>
-  );
-};
+  )
+}
